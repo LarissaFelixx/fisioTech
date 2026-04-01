@@ -1,0 +1,111 @@
+.login-shell {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 48px 20px;
+}
+
+.login-card {
+  width: min(920px, 100%);
+  min-height: 520px;
+  background: var(--panel);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--panel-border);
+  display: grid;
+  place-items: center;
+  padding: 64px 20px;
+}
+
+.brand {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  margin-bottom: 28px;
+  color: var(--brand);
+}
+
+.brand-logo {
+  width: 190px;
+  height: auto;
+  display: block;
+}
+
+.login-form {
+  width: min(360px, 100%);
+  display: grid;
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+  color: var(--brand);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.field input {
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  padding: 0 12px;
+  font-size: 14px;
+  background: #fff;
+  color: var(--text-strong);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.field input::placeholder {
+  color: #9fb5b8;
+}
+
+.field input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 3px rgba(18, 104, 110, 0.15);
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--brand);
+  font-size: 12px;
+}
+
+.remember input {
+  width: 14px;
+  height: 14px;
+  accent-color: var(--brand);
+}
+
+.submit {
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(18, 104, 110, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(18, 104, 110, 0.3);
+}
+
+.submit:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 720px) {
+  .login-card {
+    min-height: 480px;
+    padding: 48px 16px;
+  }
+}
