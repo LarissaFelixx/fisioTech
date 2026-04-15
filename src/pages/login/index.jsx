@@ -1,7 +1,12 @@
 import logo from '../../assets/logo.png'
 import '../../App.css'
 
-export default function Login() {
+export default function Login({ onLogin }) {
+  const handleLogin = (e) => {
+    e.preventDefault()
+    onLogin?.()
+  }
+
   return (
     <main className="login-shell">
       <section className="login-card" aria-label="Tela de login">
@@ -9,7 +14,7 @@ export default function Login() {
           <img src={logo} className="brand-logo" alt="WebFisio" />
         </div>
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleLogin}>
           <label className="field">
             <span>E-mail</span>
             <input type="email" placeholder="Digite seu e-mail..." />
