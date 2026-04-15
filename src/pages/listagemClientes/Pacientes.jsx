@@ -1,5 +1,5 @@
 import "./Pacientes.css";
-import Layout from "../components/Layout";
+import Layout from "src/components/layout.jsx";
 
 const pacientesMock = [
     { nome: "André Costa", email: "andre.costa@client.com" },
