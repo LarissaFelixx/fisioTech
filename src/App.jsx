@@ -4,6 +4,7 @@ import Login from './pages/login'
 import { useState } from "react";
 import './App.css';
 import Pacientes from "./pages/listagemClientes/Pacientes.jsx";
+import CadastroProfissional from "./pages/cadastroProfissional";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -18,6 +19,10 @@ function App() {
       <Route path="/" element={<Navigate to="/login" replace />} />
       <Route path="/login" element={<Login onLogin={() => setIsLogged(true)} />} />
       <Route path="/cadastro-clientes" element={<CadastroCliente />} />
+      <Route
+        path="/cadastro-profissionais"
+        element={<CadastroProfissional />}
+      />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );

@@ -1,7 +1,7 @@
 import logo from "../../assets/logo.png";
-import "./styles/cadastroCliente.css";
+import "./styles/cadastroProfissional.css";
 
-export default function CadastroCliente() {
+export default function CadastroProfissional() {
   return (
     <main className="cadastro-shell">
       <aside className="cadastro-sidebar">
@@ -12,11 +12,11 @@ export default function CadastroCliente() {
 
         <nav className="cadastro-nav" aria-label="Navegação principal">
           <button type="button">Cadastrar</button>
-          <button type="button" className="active">
-            Pacientes
-          </button>
+          <button type="button">Pacientes</button>
           <button type="button">Clientes</button>
-          <button type="button">Profissionais</button>
+          <button type="button" className="active">
+            Profissionais
+          </button>
         </nav>
 
         <div className="cadastro-user">
@@ -28,20 +28,23 @@ export default function CadastroCliente() {
         </div>
       </aside>
 
-      <section className="cadastro-card" aria-label="Tela de perfil">
+      <section
+        className="cadastro-card"
+        aria-label="Tela de cadastro de profissional"
+      >
         <header>
-          <h1 className="cadastro-title">Perfil</h1>
+          <h1 className="cadastro-title">Cadastro de Profissional</h1>
         </header>
 
         <form className="cadastro-form">
           <label className="cadastro-field">
-            <span>Nome:</span>
-            <input type="text" placeholder="Nome" />
+            <span>Nome completo:</span>
+            <input type="text" placeholder="Nome completo" />
           </label>
 
           <label className="cadastro-field">
             <span>Data de nascimento:</span>
-            <input type="text" placeholder="Data de nascimento" />
+            <input type="text" placeholder="DD/MM/AAAA" />
           </label>
 
           <label className="cadastro-field">
@@ -50,8 +53,13 @@ export default function CadastroCliente() {
           </label>
 
           <label className="cadastro-field">
-            <span>Profissão:</span>
-            <input type="text" placeholder="Profissão" />
+            <span>CREFITO:</span>
+            <input type="text" placeholder="Número de registro CREFITO" />
+          </label>
+
+          <label className="cadastro-field">
+            <span>Especialidade:</span>
+            <input type="text" placeholder="Ex: Ortopedia, Neurologia..." />
           </label>
 
           <label className="cadastro-field">
