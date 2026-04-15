@@ -11,6 +11,7 @@ const pacientesMock = [
 
 function getInitials(nome) {
     const partes = nome.split(" ");
+    if (partes.length < 2) return partes[0][0];
     return partes[0][0] + partes[1][0];
 }
 
@@ -18,7 +19,7 @@ export default function Pacientes() {
     return (
         <Layout>
             <div className="page-container">
-                <h1 className="page-title">Clientes</h1>
+                <h1 className="page-title">Pacientes</h1>
 
                 <div className="table">
                     <div className="table-header">

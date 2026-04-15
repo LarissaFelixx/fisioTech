@@ -1,23 +1,24 @@
 import "./Layout.css";
 import logo from "../assets/logo.png";
 
-// ÍCONES
 import caseIcon from "../assets/icons/case.png";
 import clipboardIcon from "../assets/icons/clipboard.png";
 import peopleIcon from "../assets/icons/people.png";
 
-// IMAGEM DO USUÁRIO
 import userImg from "../assets/medica.jpg";
 
 export default function Layout({ children }) {
     return (
         <div className="app-container">
             <aside className="sidebar">
-                <div>
+                <div className="sidebar-top">
                     {/* LOGO */}
                     <div className="logo">
                         <img src={logo} alt="WebFisio" />
                     </div>
+
+                    {/* DIVISÓRIA SUPERIOR */}
+                    <div className="sidebar-divider" />
 
                     {/* NAV */}
                     <nav className="nav">
@@ -38,11 +39,10 @@ export default function Layout({ children }) {
                     </nav>
                 </div>
 
-                {/* USER (ATUALIZADO) */}
+                {/* USER */}
                 <div className="user">
                     <img src={userImg} alt="Usuário" className="user-avatar" />
-
-                    <div className="user-info">
+                    <div className="user-details">
                         <strong>Luiza Maria</strong>
                         <span>lumaria@fisio.com</span>
                     </div>

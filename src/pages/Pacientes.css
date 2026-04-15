@@ -1,7 +1,6 @@
-/* CONTAINER CENTRAL */
+/* CONTAINER */
 .page-container {
     width: 100%;
-    max-width: 900px;
 }
 
 /* TÍTULO */
@@ -56,10 +55,10 @@
     background: #2f6f73;
     color: white;
     font-size: 12px;
-
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 /* EMAIL */
@@ -79,22 +78,18 @@
 .btn {
     width: 32px;
     height: 32px;
-
     border: none;
     border-radius: 6px;
     cursor: pointer;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* DELETE */
 .btn.delete {
     background: #ffe5e5;
 }
 
-/* EDIT */
 .btn.edit {
     background: #e8edf3;
 }
