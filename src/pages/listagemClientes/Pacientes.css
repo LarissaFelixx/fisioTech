@@ -1,0 +1,95 @@
+/* CONTAINER */
+.page-container {
+    width: 100%;
+}
+
+/* TÍTULO */
+.page-title {
+    margin-bottom: 20px;
+    color: #2f6f73;
+}
+
+/* TABELA */
+.table {
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e6e6e6;
+    overflow: hidden;
+}
+
+/* HEADER */
+.table-header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    padding: 14px 20px;
+    font-size: 14px;
+    color: #8a8a8a;
+    border-bottom: 1px solid #eee;
+}
+
+/* LINHAS */
+.table-row {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    align-items: center;
+    padding: 14px 20px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+/* USUÁRIO */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* AVATAR */
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #2f6f73;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* EMAIL */
+.email {
+    color: #555;
+    font-size: 14px;
+}
+
+/* AÇÕES */
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+/* BOTÕES */
+.btn {
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn.delete {
+    background: #ffe5e5;
+}
+
+.btn.edit {
+    background: #e8edf3;
+}
