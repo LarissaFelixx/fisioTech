@@ -1,4 +1,4 @@
-import "./Layout.css";
+import "./layout.css";
 import logo from "../assets/logo.png";
 
 import caseIcon from "../assets/icons/case.png";
