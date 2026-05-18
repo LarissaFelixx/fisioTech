@@ -1,0 +1,27 @@
+@import "../../cadastroCliente/styles/cadastroCliente.css";
+@import "../../editarProfissional/styles/editarProfissional.css";
+
+.diag-sub {
+  font-size: 13px;
+  color: #6a8f92;
+  margin-top: 2px;
+}
+
+.diag-textarea {
+  border: 1px solid #b7cdd0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #254245;
+  background: #fff;
+  outline: none;
+  resize: vertical;
+  min-height: 72px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.diag-textarea:focus {
+  border-color: #12686e;
+  box-shadow: 0 0 0 3px rgba(18, 104, 110, 0.12);
+}

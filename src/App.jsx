@@ -6,6 +6,8 @@ import './App.css';
 import Pacientes from "./pages/listagemClientes/Pacientes.jsx";
 import CadastroProfissional from "./pages/cadastroProfissional";
 import EditarProfissional from "./pages/editarProfissional";
+import PerfilPaciente from "./pages/perfilPaciente";
+import DiagnosticoFisioterapeutico from "./pages/diagnosticoFisioterapeutico";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -24,6 +26,11 @@ function App() {
       <Route
         path="/cadastro-profissionais"
         element={<CadastroProfissional />}
+      />
+      <Route path="/perfil-paciente" element={<PerfilPaciente />} />
+      <Route
+        path="/diagnostico-fisioterapeutico"
+        element={<DiagnosticoFisioterapeutico />}
       />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
