@@ -6,6 +6,8 @@ import './App.css';
 import Pacientes from "./pages/listagemClientes/Pacientes.jsx";
 import CadastroProfissional from "./pages/cadastroProfissional";
 import EditarProfissional from "./pages/editarProfissional";
+import EvolucaoQueixaPrincipal from "./pages/evolucaoQueixaPrincipal";
+import RespostaAoTratamento from "./pages/respostaAoTratamento";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -25,6 +27,8 @@ function App() {
         path="/cadastro-profissionais"
         element={<CadastroProfissional />}
       />
+      <Route path="/evolucao-queixa" element={<EvolucaoQueixaPrincipal />} />
+      <Route path="/resposta-tratamento" element={<RespostaAoTratamento />} />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
