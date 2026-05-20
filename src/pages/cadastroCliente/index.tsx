@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./styles/cadastroCliente.css";
 
 export default function CadastroCliente() {
+  const navigate = useNavigate();
+
   return (
     <main className="cadastro-shell">
       <aside className="cadastro-sidebar">
@@ -12,9 +15,11 @@ export default function CadastroCliente() {
 
         <nav className="cadastro-nav" aria-label="Navegação principal">
           <button type="button">Cadastrar</button>
+
           <button type="button" className="active">
             Pacientes
           </button>
+
           <button type="button">Clientes</button>
           <button type="button">Profissionais</button>
         </nav>
@@ -81,7 +86,12 @@ export default function CadastroCliente() {
             <button type="button" className="cadastro-btn outline">
               Cadastrar
             </button>
-            <button type="button" className="cadastro-btn primary">
+
+            <button
+              type="button"
+              className="cadastro-btn primary"
+              onClick={() => navigate("/quadro-clinico")}
+            >
               Próximo
             </button>
           </div>

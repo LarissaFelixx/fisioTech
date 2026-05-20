@@ -1,0 +1,94 @@
+.rat-container {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 130px);
+}
+
+.rat-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2f6f73;
+    margin-bottom: 28px;
+}
+
+.rat-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.rat-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.rat-label {
+    font-size: 13px;
+    color: #3b4f52;
+    font-weight: 400;
+}
+
+.rat-textarea {
+    width: 100%;
+    height: 90px;
+    border: 1px solid #d4d4d4;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #3b4f52;
+    background: #ffffff;
+    resize: none;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.rat-textarea:focus {
+    border-color: #12686e;
+    box-shadow: 0 0 0 3px rgba(18, 104, 110, 0.1);
+}
+
+/* FOOTER */
+.rat-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: 40px;
+}
+
+.rat-btn {
+    height: 40px;
+    min-width: 120px;
+    padding: 0 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.rat-btn-voltar {
+    background: #ffffff;
+    border: 1px solid #b7cdd0;
+    color: #2b5a5f;
+}
+
+.rat-btn-voltar:hover {
+    background: #f4f9fa;
+}
+
+.rat-btn-proximo {
+    background: #0f3f44;
+    border: 1px solid transparent;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(15, 63, 68, 0.22);
+}
+
+.rat-btn-proximo:hover {
+    background: #0a3237;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(15, 63, 68, 0.28);
+}
