@@ -26,7 +26,7 @@ export default function EvolucaoQueixaPrincipal() {
 
                     <div className="evq-group">
                         <label className="evq-label">
-                            Em uma escala de 0 a 15, quanto está a dor atualmente?
+                            Em uma escala de 0 a 5, quanto está a dor atualmente?
                         </label>
                         <div className="evq-radio-row">
                             {ESCALA_OPCOES.map((opcao) => (
