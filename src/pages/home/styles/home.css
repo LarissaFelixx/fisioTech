@@ -1,0 +1,358 @@
+:root {
+  --home-bg: #cfe9ea;
+  --home-panel: #f8f8f8;
+  --home-brand: #0d626b;
+  --home-brand-dark: #064f57;
+  --home-brand-light: #9edbd7;
+  --home-menu-active: #64c2bc;
+  --home-text: #0b5962;
+  --home-muted: #729092;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.home-shell {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  background: var(--home-bg);
+  color: var(--home-text);
+  overflow: hidden;
+}
+
+.home-sidebar {
+  width: 225px;
+  min-height: 100vh;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  background: var(--home-bg);
+  border-right: 1px solid rgba(255, 255, 255, 0.65);
+}
+
+.home-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 0 12px 28px;
+  min-height: 68px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  color: var(--home-brand-dark);
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.home-brand img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.home-nav {
+  margin-top: 105px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.home-nav button {
+  width: 100%;
+  height: 52px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--home-brand-light);
+  color: #16484e;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 17px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  text-align: left;
+}
+
+.home-nav button:hover {
+  background: var(--home-menu-active);
+  color: #063f46;
+}
+
+.home-nav button.active {
+  background: var(--home-menu-active);
+  color: #063f46;
+}
+
+.home-nav-icon {
+  width: 22px;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.home-user {
+  margin-top: auto;
+  min-height: 66px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.home-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--home-brand);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.home-user-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.home-user-info strong {
+  font-size: 16px;
+  font-weight: 500;
+  color: #16484e;
+}
+
+.home-user-info span {
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--home-muted);
+}
+
+.home-card {
+  flex: 1;
+  margin-top: 15px;
+  background: var(--home-panel);
+  border-radius: 22px 0 0 0;
+  min-height: calc(100vh - 15px);
+  overflow: hidden;
+}
+
+.home-content {
+  width: 100%;
+  height: 100%;
+  min-height: calc(100vh - 15px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 70px 95px;
+  gap: 60px;
+}
+
+.home-text {
+  max-width: 530px;
+  margin-left: 5px;
+  padding-top: 55px;
+  flex-shrink: 0;
+}
+
+.home-text h1 {
+  margin: 0;
+  color: var(--home-text);
+  font-size: 46px;
+  line-height: 1.18;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+}
+
+.home-text h1 strong {
+  font-weight: 800;
+}
+
+.home-text p {
+  margin: 8px 0 0;
+  color: var(--home-text);
+  font-size: 19px;
+  line-height: 1.28;
+  font-weight: 500;
+}
+
+.home-primary-btn {
+  margin-top: 110px;
+  width: 390px;
+  height: 60px;
+  border: 0;
+  border-radius: 999px;
+  background: #126f78;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.home-primary-btn:hover {
+  background: #0b5962;
+  transform: translateY(-1px);
+}
+
+.home-image-wrapper {
+  width: 590px;
+  max-width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home-fisio-image {
+  width: 100%;
+  max-width: 590px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Responsividade para telas médias */
+@media (max-width: 1200px) {
+  .home-content {
+    padding: 50px;
+    gap: 30px;
+  }
+
+  .home-text h1 {
+    font-size: 38px;
+  }
+
+  .home-text p {
+    font-size: 17px;
+  }
+
+  .home-primary-btn {
+    width: 330px;
+    height: 56px;
+    font-size: 20px;
+    margin-top: 80px;
+  }
+
+  .home-image-wrapper {
+    width: 500px;
+    max-width: 46%;
+  }
+
+  .home-fisio-image {
+    max-width: 500px;
+  }
+}
+
+/* Responsividade para tablet/celular */
+@media (max-width: 900px) {
+  .home-shell {
+    flex-direction: column;
+    overflow: auto;
+  }
+
+  .home-sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .home-brand {
+    padding-left: 0;
+  }
+
+  .home-nav {
+    margin-top: 24px;
+  }
+
+  .home-user {
+    margin-top: 24px;
+  }
+
+  .home-card {
+    margin: 0;
+    border-radius: 22px 22px 0 0;
+    min-height: auto;
+  }
+
+  .home-content {
+    min-height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 24px;
+    gap: 35px;
+  }
+
+  .home-text {
+    max-width: 100%;
+    padding-top: 0;
+    margin-left: 0;
+  }
+
+  .home-text h1 {
+    font-size: 34px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .home-primary-btn {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .home-image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .home-fisio-image {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+/* Responsividade para celular pequeno */
+@media (max-width: 480px) {
+  .home-brand {
+    font-size: 24px;
+  }
+
+  .home-brand img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .home-nav button {
+    height: 48px;
+    font-size: 15px;
+  }
+
+  .home-content {
+    padding: 32px 18px;
+  }
+
+  .home-text h1 {
+    font-size: 29px;
+  }
+
+  .home-primary-btn {
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .home-fisio-image {
+    max-width: 340px;
+  }
+}
