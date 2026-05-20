@@ -8,7 +8,9 @@ import CadastroProfissional from "./pages/cadastroProfissional";
 import EditarProfissional from "./pages/editarProfissional";
 import EvolucaoQueixaPrincipal from "./pages/evolucaoQueixaPrincipal";
 import RespostaAoTratamento from "./pages/respostaAoTratamento";
-import Home from "./pages/home/Home.jsx";
+import AjustePlanoTerapeutico from "./pages/ajustePlanoTerapeutico";
+import AdesaoExercicios from "./pages/adesaoExercicios";
+import Home from "./pages/home/home.jsx";
 import QuadroClinico from "./pages/quadroClinico/QuadroClinico.jsx";
 
 import "./App.css";
@@ -30,6 +32,11 @@ function App() {
       />
       <Route path="/evolucao-queixa" element={<EvolucaoQueixaPrincipal />} />
       <Route path="/resposta-tratamento" element={<RespostaAoTratamento />} />
+      <Route
+        path="/ajuste-plano-terapeutico"
+        element={<AjustePlanoTerapeutico />}
+      />
+      <Route path="/adesao-exercicios" element={<AdesaoExercicios />} />
 
       <Route
         path="/login"
