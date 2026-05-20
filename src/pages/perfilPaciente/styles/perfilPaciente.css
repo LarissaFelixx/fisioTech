@@ -1,0 +1,26 @@
+@import "../../cadastroCliente/styles/cadastroCliente.css";
+
+.perfil-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.perfil-info-item {
+  display: grid;
+  gap: 4px;
+}
+
+.perfil-info-item span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6a8f92;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.perfil-info-item strong {
+  font-size: 14px;
+  color: #254245;
+}

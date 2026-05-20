@@ -12,6 +12,8 @@ import Home from "./pages/home/Home.jsx";
 import QuadroClinico from "./pages/quadroClinico/QuadroClinico.jsx";
 
 import "./App.css";
+import PerfilPaciente from "./pages/perfilPaciente";
+import DiagnosticoFisioterapeutico from "./pages/diagnosticoFisioterapeutico";
 
 function App() {
   const [isLogged, setIsLogged] = useState(false);
@@ -64,6 +66,11 @@ function App() {
         }
       />
 
+      <Route path="/perfil-paciente" element={<PerfilPaciente />} />
+      <Route
+        path="/diagnostico-fisioterapeutico"
+        element={<DiagnosticoFisioterapeutico />}
+      />
       <Route path="*" element={<Navigate to="/login" replace />} />
     </Routes>
   );
