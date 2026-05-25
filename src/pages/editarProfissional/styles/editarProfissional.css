@@ -1,4 +1,4 @@
-@import "src/pages/cadastroCliente/styles/cadastroCliente.css";
+@import "../../cadastroCliente/styles/cadastroCliente.css";
 
 .editar-profile-header {
   display: flex;

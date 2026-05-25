@@ -12,13 +12,14 @@ import AjustePlanoTerapeutico from "./pages/ajustePlanoTerapeutico";
 import AdesaoExercicios from "./pages/adesaoExercicios";
 import Home from "./pages/home/home.jsx";
 import QuadroClinico from "./pages/quadroClinico/QuadroClinico.jsx";
-
+import HabitosVida from "./pages/habitosdeVida/HabitosVida.jsx";
+import ExameFisico from "./pages/exameFisico/ExameFisico.jsx";
 import "./App.css";
 import PerfilPaciente from "./pages/perfilPaciente";
 import DiagnosticoFisioterapeutico from "./pages/diagnosticoFisioterapeutico";
 
 function App() {
-  const [isLogged, setIsLogged] = useState(false);
+  const [isLogged, setIsLogged] = useState(true);
 
   return (
     <Routes>
@@ -78,7 +79,18 @@ function App() {
         path="/diagnostico-fisioterapeutico"
         element={<DiagnosticoFisioterapeutico />}
       />
+
       <Route path="*" element={<Navigate to="/login" replace />} />
+        <Route path="/habitos-vida" element={<HabitosVida />}/>
+
+        <Route
+            path="/exame-fisico"
+            element={<ExameFisico />}
+        />
+
+        <Route path="*" element={<Navigate to="/login" replace />}
+
+        />
     </Routes>
   );
 }
